@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.expensetracker.ui.MainController">
+
+    <!-- Top Form -->
+    <top>
+        <VBox spacing="8" padding="10">
+            <HBox spacing="10">
+                <DatePicker fx:id="datePicker" promptText="Date"/>
+                <TextField fx:id="descriptionField" promptText="Description" prefWidth="200"/>
+                <ComboBox fx:id="categoryBox" promptText="Category" prefWidth="150"/>
+                <ComboBox fx:id="typeBox" promptText="Type" prefWidth="120"/>
+                <TextField fx:id="amountField" promptText="Amount" prefWidth="100"/>
+                <Button fx:id="addButton" text="Add" onAction="#handleAddTransaction"/>
+                <Button fx:id="deleteButton" text="Delete" onAction="#handleDeleteTransaction"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- Center: Table -->
+    <center>
+        <TableView fx:id="transactionTable">
+            <columns>
+                <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+                <TableColumn fx:id="descriptionColumn" text="Description" prefWidth="200"/>
+                <TableColumn fx:id="categoryColumn" text="Category" prefWidth="120"/>
+                <TableColumn fx:id="typeColumn" text="Type" prefWidth="100"/>
+                <TableColumn fx:id="amountColumn" text="Amount" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <!-- Bottom: Chart Controls -->
+    <bottom>
+        <HBox spacing="10" padding="10">
+            <Button text="Show Pie Chart" onAction="#showPie"/>
+            <Button text="Show Bar Chart" onAction="#showBar"/>
+        </HBox>
+    </bottom>
+
+    <!-- Right: Chart Area -->
+    <right>
+        <BorderPane fx:id="chartPane" prefWidth="400" />
+    </right>
+
+</BorderPane>
