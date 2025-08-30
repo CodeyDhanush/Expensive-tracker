@@ -1,0 +1,5 @@
+com\example\expensetracker\App.class
+com\example\expensetracker\dao\TransactionDao.class
+com\example\expensetracker\db\Database.class
+com\example\expensetracker\model\Transaction.class
+com\example\expensetracker\ui\MainController.class
