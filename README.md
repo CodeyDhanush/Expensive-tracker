@@ -35,7 +35,8 @@ This project is designed to provide an intuitive way to track income and expense
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure 
+ Images/project_structure.png
 
 
 
