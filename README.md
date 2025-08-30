@@ -7,7 +7,7 @@ This project is designed to provide an intuitive way to track income and expense
 
 ##  Features
 
--  **Expense Management**  
+-  **Expense Management :**  
   - Add, edit, and delete expenses by category.  
   - Store data locally in an SQLite database.  
 
